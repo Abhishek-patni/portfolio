@@ -34,9 +34,23 @@ class ProfileAvatar extends StatelessWidget {
 class InfoText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        _buildText('Hello, I am '),
+        _buildText('Abhishek Patni', color: Colors.white),
+      ],
+    );
+  }
+
+  Text _buildText(String text, {Color color = Colors.grey}) {
     return Text(
-      'Hello, I am Abhishek Patni',
-      style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+      text,
+      style: TextStyle(
+        fontSize: 24,
+        fontWeight: FontWeight.bold,
+        color: color,
+      ),
     );
   }
 }

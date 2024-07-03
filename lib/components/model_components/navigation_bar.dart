@@ -11,27 +11,12 @@ class TopNavigationBar extends StatelessWidget {
     return Scaffold(
       body: Padding(
         padding: const EdgeInsets.all(defaultPadding),
-        child: Responsive.isLargeMobile(context)
-            ? Center(
-          child: Image.asset(
-            'assets/images/logo.png',
-            height: 60,
-            width: 60,
-          ),
-        )
-            : Row(
+        child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             const Spacer(),
-            Image.asset(
-              'assets/images/logo.png',
-              height: Responsive.isDesktop(context) ? 100 : 60,
-              width: Responsive.isDesktop(context) ? 100 : 60,
-            ),
-            const Spacer(flex: 2),
             if (!Responsive.isLargeMobile(context))
               const NavigationButtonList(),
-            const Spacer(flex: 2),
             const Spacer(),
           ],
         ),

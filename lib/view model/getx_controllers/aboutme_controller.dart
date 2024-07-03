@@ -4,14 +4,19 @@ class AboutMeController extends GetxController {
   var skills = <String>[
     'Flutter',
     'Python',
-    'Linux',
+    'Web Development',
     'Cloud Computing',
+    'AWS',
+    'Firebase',
+    'Salesforce',
+    'Linux Basics'
+
   ].obs;
 
   var hobbies = <String>[
-    'Football',
-    'Guitar',
-    'Rubik\'s Cube',
-    'Chess',
+    'Hindi',
+    'English',
+    'Marathi',
+    'Pubjabi'
   ].obs;
 }
