@@ -17,6 +17,7 @@ class AboutMePage extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              const SizedBox(height: 10,),
               const TitleText(prefix: 'About ', title: 'Me'),
               const SizedBox(height: 20),
               ProfileAvatar(),
@@ -36,7 +37,7 @@ class AboutMePage extends StatelessWidget {
                   ),
                   Expanded(
                     child: SectionColumn(
-                      title: 'Hobbies',
+                      title: 'Native Lanugages',
                       items: controller.hobbies.map((hobby) => Text(hobby)).toList(),
                     ),
                   ),
